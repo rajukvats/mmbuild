@@ -19,7 +19,7 @@ angular.module('mm.core.login', [])
     $stateProvider
 
     .state('mm_login', {
-        url: '/mm_login',
+        url: 'http://moodle.iityx.com',
         abstract: true,
         templateUrl: 'core/components/login/templates/base.html',
         cache: false,   // Disable caching to force controller reload.
@@ -30,7 +30,7 @@ angular.module('mm.core.login', [])
     })
 
     .state('mm_login.init', {
-        url: '/init',
+        url: 'http://moodle.iityx.com',
         templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
         cache: false // Disable caching to force controller reload.
